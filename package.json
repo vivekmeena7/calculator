@@ -1,11 +1,10 @@
 {
+  "homepage": "https://vivekmeena7.github.io/Calculator",
   "name": "calculator",
   "version": "0.1.0",
-  "license": "MIT",
-  "homepage": "http://ahfarmer.github.io/calculator",
   "devDependencies": {
     "chai": "^4.2.0",
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^2.2.0",
     "prettier": "^1.17.1",
     "react-scripts": "^3.0.1"
   },
@@ -16,11 +15,13 @@
     "react-dom": "^16.8.6"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
+    
   },
   "prettier": {
     "trailingComma": "all"
